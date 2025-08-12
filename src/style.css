@@ -1,0 +1,14 @@
+/* src/style.css */
+:root {
+    --primary-color: #ff8c00;
+    --secondary-color: #ff5e00;
+    --dark-bg: #1a1a1a;
+    --card-bg: linear-gradient(135deg, rgba(40, 30, 20, 0.7), rgba(20, 20, 20, 0.8));
+    --text-color: #f0f0f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    /* El fondo de cada página lo definirá su propio componente */
+}
