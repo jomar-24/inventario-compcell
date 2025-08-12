@@ -1,37 +1,35 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
-import Login from '../views/Login.vue'
-import History from '../views/History.vue'
-// ¡NUEVO! Importamos las páginas de categorías
-import Categories from '../views/Categories.vue'
-import CategoryDetail from '../views/CategoryDetail.vue'
+import dashboard from '../views/dashboard.vue'
+import login from '../views/login.vue'
+import history from '../views/history.vue'
+import categories from '../views/categories.vue'
+import categorydetail from '../views/categorydetail.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Dashboard',
-    component: Dashboard
+    name: 'dashboard',
+    component: dashboard
   },
   {
     path: '/login',
-    name: 'Login',
-    component: Login
+    name: 'login',
+    component: login
   },
   {
     path: '/history',
-    name: 'History',
-    component: History
+    name: 'history',
+    component: history
   },
-  // ¡NUEVAS RUTAS AÑADIDAS AQUÍ!
   {
     path: '/categories',
-    name: 'Categories',
-    component: Categories
+    name: 'categories',
+    component: categories
   },
   {
     path: '/category/:id',
-    name: 'CategoryDetail',
-    component: CategoryDetail
+    name: 'categorydetail',
+    component: categorydetail
   }
 ]
 
